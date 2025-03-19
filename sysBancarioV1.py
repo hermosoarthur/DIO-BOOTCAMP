@@ -37,6 +37,8 @@ def Saque():
     elif valorSaque > saldo:
         print("Saldo insuficiente.")
         return
+    elif valorSaque > limite:
+        print("Valor do saque excede o limite.")
     elif numeros_saque >= limites_saque:
         print("Limite de saques diários excedido.")
         return
